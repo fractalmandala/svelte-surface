@@ -1,0 +1,47 @@
+/* Shared element styles + a few utility classes used across components. Everything reads tokens.css. */
+* { box-sizing: border-box }
+html, body { height: 100% }
+body {
+  margin: 0; font: var(--font-size-base)/var(--line-height) var(--font-sans); color: var(--color-text); background: var(--color-bg);
+  height: 100vh; display: flex; flex-direction: column;
+}
+button, select, input, textarea { font: inherit }
+button { padding: var(--space-1) 9px; border: 1px solid var(--color-border-strong); background: var(--color-surface); border-radius: var(--radius); cursor: pointer; color: inherit }
+button:hover { background: var(--color-surface-hover) }
+button:disabled { opacity: 0.45; cursor: default }
+button.on { background: var(--color-accent); color: var(--color-primary-contrast); border-color: var(--color-accent) }
+button.primary { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-primary-contrast) }
+button.primary:hover { background: var(--color-primary-hover) }
+button.danger { color: var(--color-danger) }
+button.warnb, .badge.warnb { background: var(--color-warn-soft); color: var(--color-warn-text); border-color: var(--color-warn-border) }
+button.bad, .badge.bad { background: var(--color-danger-soft); color: var(--color-danger-text); border-color: var(--color-danger-border) }
+input, select, textarea { padding: var(--space-1) 6px; border: 1px solid var(--color-border-strong); border-radius: var(--radius); min-width: 0; background: var(--color-surface); color: inherit }
+textarea { width: 100%; font: var(--font-size-small) var(--font-mono) }
+h2 { margin: var(--space-2) 0 }
+h3 { margin: 14px 0 var(--space-2); font-size: var(--font-size-tiny); text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted) }
+code { background: var(--color-bg); padding: 0 var(--space-2); border-radius: var(--radius-sm) }
+[hidden] { display: none !important }
+
+.dim { color: var(--color-text-dim) }
+.grow { flex: 1 }
+.row { display: flex; gap: var(--space-2); margin: var(--space-1) 0 }
+.row input { flex: 1 }
+.ref { font: var(--font-size-tiny) var(--font-mono); color: var(--color-text-soft); margin-bottom: var(--space-2); word-break: break-all }
+.note { font-size: var(--font-size-tiny); color: var(--color-warn-text) }
+.note:empty { display: none }
+.pad { padding: 10px }
+.err { color: var(--color-danger) }
+.warn { color: var(--color-warn) }
+.badge { font-size: 10px; padding: 1px 6px; border-radius: var(--radius-lg); background: var(--color-border); color: var(--color-text-soft) }
+.badge.ok { background: var(--color-ok-soft); color: var(--color-ok-text) }
+.log { background: var(--color-console-bg); color: var(--color-console-text); font: var(--font-size-tiny)/1.4 var(--font-mono); padding: var(--space-3); border-radius: var(--radius); max-height: 200px; overflow: auto; white-space: pre-wrap; margin: var(--space-3) 0 }
+.dot { color: #d97706; font-style: normal; font-size: 10px }
+.dot[hidden] { display: none }
+
+/* modal chrome shared by every dialog */
+.modal { position: fixed; inset: 0; background: var(--color-scrim); display: flex; align-items: center; justify-content: center; z-index: var(--z-modal) }
+.dialog { background: var(--color-surface); border-radius: var(--radius-xl); width: 720px; max-width: 95vw; height: 560px; max-height: 92vh; padding: 14px var(--space-5); display: flex; flex-direction: column; gap: var(--space-3) }
+.dialog.small { width: 600px; height: auto; max-height: 85vh }
+.dialog.auto { height: auto }
+.dialog.wide { width: min(1250px, 96vw); height: 84vh }
+.brlist { flex: 1; overflow: auto; border: 1px solid var(--color-border); border-radius: var(--radius-lg) }

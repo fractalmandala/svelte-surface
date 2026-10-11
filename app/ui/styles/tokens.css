@@ -1,0 +1,70 @@
+/*
+ * Design tokens — the one place to restyle the app. Every component reads these variables.
+ * Override any of them (e.g. in a user stylesheet loaded after this one) to re-theme.
+ */
+:root {
+  /* color: surfaces */
+  --color-bg: #f3f4f6;
+  --color-surface: #ffffff;
+  --color-surface-muted: #fafafa;
+  --color-surface-hover: #f3f4f6;
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  /* color: text */
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-dim: #9ca3af;
+  --color-text-soft: #4b5563;
+  /* color: brand + feedback */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-contrast: #ffffff;
+  --color-accent: #3b82f6;
+  --color-accent-soft: #eff6ff;
+  --color-accent-soft-strong: #bfdbfe;
+  --color-ink: #111827;
+  --color-danger: #b91c1c;
+  --color-danger-soft: #fee2e2;
+  --color-danger-border: #fca5a5;
+  --color-danger-text: #991b1b;
+  --color-warn: #b45309;
+  --color-warn-soft: #fef3c7;
+  --color-warn-soft-bg: #fffbeb;
+  --color-warn-border: #fcd34d;
+  --color-warn-text: #92400e;
+  --color-ok-soft: #d1fae5;
+  --color-ok-text: #065f46;
+  --color-highlight: #fef9c3;
+  --color-scrim: rgba(17, 24, 39, 0.45);
+  --color-console-bg: #111827;
+  --color-console-text: #d1d5db;
+  /* type */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-size-base: 13px;
+  --font-size-small: 12px;
+  --font-size-tiny: 11px;
+  --font-size-title: 24px;
+  --line-height: 1.4;
+  /* shape + spacing */
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-pill: 10px;
+  --space-1: 3px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 24px;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.06);
+  --shadow-stage: 0 1px 6px rgba(0, 0, 0, 0.15);
+  /* layout */
+  --panel-left: 220px;
+  --panel-right: 340px;
+  --panel-tree: 240px;
+  --card-width: 640px;
+  --z-screen: 5;
+  --z-modal: 10;
+}

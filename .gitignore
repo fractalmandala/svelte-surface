@@ -1,0 +1,15 @@
+node_modules
+dist
+fixtures/**/.svelte-kit
+fixtures/.run-*
+*.tgz
+fixtures/svelte4-app/node_modules
+fixtures/svelte4-app/.run-*
+fixtures/.demo-run
+fixtures/.app-test
+dist-app
+app/public/vendor
+app-dist
+
+//temp in list
+native-shell

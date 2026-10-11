@@ -1,0 +1,7 @@
+{
+  "name": "vite-svelte-fixture",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "devDependencies": { "@sveltejs/vite-plugin-svelte": "*", "svelte": "*", "vite": "*" }
+}
